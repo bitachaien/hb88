@@ -1,0 +1,7 @@
+# Ignore parent directory git
+../../.git
+../../*
+
+# Only include current directory
+!.
+!./*
