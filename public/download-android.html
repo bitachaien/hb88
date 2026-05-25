@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tải Xoso66 cho Android</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .version {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1976d2;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .download-btn {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      margin: 20px 0;
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+    }
+
+    .download-btn:active {
+      transform: translateY(0);
+    }
+
+    .download-btn.disabled {
+      background: #6c757d;
+      cursor: not-allowed;
+    }
+
+    .steps {
+      text-align: left;
+      margin: 30px 0;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+    }
+
+    .step {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: start;
+    }
+
+    .step-number {
+      background: #667eea;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .step-text {
+      color: #333;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .note {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .note-title {
+      font-weight: bold;
+      color: #856404;
+      margin-bottom: 5px;
+    }
+
+    .note-text {
+      color: #856404;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .info-box {
+      background: #e8f5e9;
+      border-left: 4px solid #4caf50;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .info-title {
+      font-weight: bold;
+      color: #2e7d32;
+      margin-bottom: 5px;
+    }
+
+    .info-text {
+      color: #2e7d32;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .icon {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+
+    .loading {
+      display: none;
+      margin-top: 10px;
+      color: #666;
+    }
+
+    .loading.show {
+      display: block;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="/assets/images/icon.png" alt="Xoso66 Logo">
+    </div>
+
+    <h1>Xoso66</h1>
+    <p class="subtitle">Xổ Số Trực Tuyến</p>
+    <div class="version">Phiên bản 1.0.0</div>
+
+    <a href="#" class="download-btn" id="downloadBtn" onclick="downloadAPK(event)">
+      <span class="icon">📥</span>
+      Tải APK (Android)
+    </a>
+
+    <div class="loading" id="loading">
+      <span>⏳ Đang chuẩn bị tải xuống...</span>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-text">Nhấn nút <strong>"Tải APK"</strong> ở trên</div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-text">Chờ file APK tải xuống hoàn tất</div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-text">Mở file APK vừa tải về</div>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-text">Cho phép cài đặt từ nguồn không xác định (nếu được hỏi)</div>
+      </div>
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-text">Nhấn <strong>"Cài đặt"</strong> và chờ hoàn tất</div>
+      </div>
+    </div>
+
+    <div class="note">
+      <div class="note-title">⚠️ Lưu ý quan trọng:</div>
+      <div class="note-text">
+        • Bạn cần kết nối VPN trước khi tải và cài đặt<br>
+        • Cho phép cài đặt từ nguồn không xác định trong Cài đặt<br>
+        • File APK an toàn, không chứa virus<br>
+        • Kích thước file: ~50MB
+      </div>
+    </div>
+
+    <div class="info-box">
+      <div class="info-title">✅ Tính năng:</div>
+      <div class="info-text">
+        • Giao diện đẹp, mượt mà<br>
+        • Đặt cược xổ số nhanh chóng<br>
+        • Nạp/rút tiền dễ dàng<br>
+        • Thông báo kết quả trực tiếp<br>
+        • Bảo mật cao, an toàn tuyệt đối
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function downloadAPK(event) {
+      event.preventDefault();
+
+      const btn = document.getElementById('downloadBtn');
+      const loading = document.getElementById('loading');
+
+      // Check if APK file exists
+      const apkUrl = '/app-release.apk';
+
+      // Show loading
+      loading.classList.add('show');
+      btn.classList.add('disabled');
+      btn.innerHTML = '<span class="icon">⏳</span> Đang tải...';
+
+      // Check if file exists
+      fetch(apkUrl, { method: 'HEAD' })
+        .then(response => {
+          if (response.ok) {
+            // File exists, start download
+            window.location.href = apkUrl;
+
+            setTimeout(() => {
+              loading.classList.remove('show');
+              btn.classList.remove('disabled');
+              btn.innerHTML = '<span class="icon">📥</span> Tải APK (Android)';
+            }, 2000);
+          } else {
+            // File not found
+            alert('⚠️ File APK chưa sẵn sàng. Vui lòng thử lại sau hoặc liên hệ hỗ trợ.');
+            loading.classList.remove('show');
+            btn.classList.remove('disabled');
+            btn.innerHTML = '<span class="icon">📥</span> Tải APK (Android)';
+          }
+        })
+        .catch(error => {
+          alert('⚠️ Không thể tải file. Vui lòng kiểm tra kết nối VPN và thử lại.');
+          loading.classList.remove('show');
+          btn.classList.remove('disabled');
+          btn.innerHTML = '<span class="icon">📥</span> Tải APK (Android)';
+        });
+    }
+
+    // Auto-detect Android
+    window.addEventListener('load', function () {
+      const isAndroid = /Android/i.test(navigator.userAgent);
+      if (!isAndroid) {
+        const btn = document.getElementById('downloadBtn');
+        btn.innerHTML = '<span class="icon">⚠️</span> Chỉ hỗ trợ Android';
+        btn.classList.add('disabled');
+        btn.onclick = function (e) {
+          e.preventDefault();
+          alert('Trang này chỉ dành cho thiết bị Android. Nếu bạn dùng iOS, vui lòng truy cập /download-ios.html');
+        };
+      }
+    });
+  </script>
+</body>
+
+</html>
